@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access control for flight_plan'
+@MappingRole: true
+define role zac_flight_plan {
+    grant select on zflight_plan_association
+      where (carrid) = aspect 
+        pfcg_auth( ZAIRLINE, CARRID, ACTVT = '02' );
+}

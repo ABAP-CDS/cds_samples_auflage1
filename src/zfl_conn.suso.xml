@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZFL_CONN</OBJCT>
+    <FIEL1>ACTVT</FIEL1>
+    <FIEL2>CARRID</FIEL2>
+    <FIEL3>ZCONNID</FIEL3>
+    <OCLSS>ZDEM</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>D</LANGU>
+    <OBJECT>ZFL_CONN</OBJECT>
+    <TTEXT>Flugverbindung</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZFL_CONN</OBJCT>
+   </TOBJVORFLG>
+   <TACTZ>
+    <TACTZ>
+     <BROBJ>ZFL_CONN</BROBJ>
+     <ACTVT>01</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZFL_CONN</BROBJ>
+     <ACTVT>02</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZFL_CONN</BROBJ>
+     <ACTVT>03</ACTVT>
+    </TACTZ>
+   </TACTZ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

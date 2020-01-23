@@ -1,0 +1,8 @@
+@EndUserText.label: 'Full access or deny on flight plan'
+@MappingRole: true
+define role zac_flight_plan_binary {
+    grant select on zflight_plan_association                
+      where () = aspect pfcg_auth( ZFL_PLAN, ACTVT = '02' );
+        
+                        
+}
