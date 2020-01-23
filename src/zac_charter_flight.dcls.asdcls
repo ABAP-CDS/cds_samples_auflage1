@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access control for charter flights'
+@MappingRole: true
+define role Zac_Charter_Flight {
+  grant select on zflight_plan
+    where (fltype) ?= aspect pfcg_auth( ZFL_CHA, ZFLTYPE, ACTVT = '02' );                        
+}

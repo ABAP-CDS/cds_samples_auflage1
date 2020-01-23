@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access control for charter flights and airlines'
+@MappingRole: true
+define role zac_flight_plan_inherit {
+    grant select on zflight_plan_with_prices
+    inherit zac_charter_flight
+    or (carrid) = aspect pfcg_auth( ZAIRLINE, CARRID, ACTVT = '02' );                          
+}

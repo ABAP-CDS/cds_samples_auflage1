@@ -1,0 +1,6 @@
+@EndUserText.label: 'Selective access control for flight plan'
+@MappingRole: true
+define role zac_flight_plan_selective {
+  grant select on zflight_plan_association
+    where (carrid, connid) = aspect pfcg_auth( ZFL_CONN, CARRID, ZCONNID, ACTVT = '02' );
+}

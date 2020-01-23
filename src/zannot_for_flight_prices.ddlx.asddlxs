@@ -1,0 +1,10 @@
+@Metadata.layer: #CORE
+@EndUserText.label: 'Average, max and min flight prices'
+annotate view ZSAMPLE_aggregat_functions with{
+    @EndUserText.label: 'Maximum flight price'
+    max_price;
+    @EndUserText.label: 'Minimum flight price'
+    min_price;
+    @EndUserText.label: 'Average flight price'
+    average_price;
+}
