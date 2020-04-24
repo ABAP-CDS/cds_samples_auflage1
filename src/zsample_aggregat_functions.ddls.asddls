@@ -4,7 +4,7 @@
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'Sample for aggregate function'
 @AbapCatalog.viewEnhancementCategory: [#PROJECTION_LIST, #GROUP_BY]
-@Metadata.allowExtensions: true
+@Metadata.allowExtensions
 define view ZSAMPLE_aggregat_functions as select from sflight {
     key carrid,
     key connid,

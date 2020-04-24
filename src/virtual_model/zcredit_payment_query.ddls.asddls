@@ -9,7 +9,7 @@ define view zcredit_payment_query as select from zcredit_payments_cube {
     key document_no,
     @Consumption.filter: {
       selectionType: #RANGE,
-      multipleSelections: true,      
+      multipleSelections: true,     
       defaultValue: '2'
     }
     @AnalyticsDetails.query.axis: #COLUMNS
@@ -19,7 +19,7 @@ define view zcredit_payment_query as select from zcredit_payments_cube {
     @AnalyticsDetails.query.axis: #COLUMNS
     _credit.borrower,
     @AnalyticsDetails.query.axis: #COLUMNS
-    _credit.name,    
+    _credit.name,
     amount,    
     @AnalyticsDetails.query.axis: #ROWS
     posting_date,        
