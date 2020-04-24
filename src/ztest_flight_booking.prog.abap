@@ -45,7 +45,7 @@ CLASS test_flight_booking IMPLEMENTATION.
     environment->get_double( 'sbook' )->insert( test_data_bookings ).
 
     DATA(stub_currency_amount) =
-      cl_cds_test_data=>create_currency_conv_data( 1000 )->for_parameters(
+     cl_cds_test_data=>create_currency_conv_data( 1000 )->for_parameters(
         amount = 500 source_currency = 'EUR' target_currency = 'USD'
         exchange_rate_date = sy-datum ).
     environment->get_double( cl_cds_test_environment=>currency_conversion

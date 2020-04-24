@@ -22,4 +22,5 @@ define table function ztable_function_built_in returns {
     short_string: abap.sstring(1333);
     string: abap.string;
     time: abap.tims;
-} implemented by method zcl_first_table_function=>built_in
+    unit: abap.unit;
+} implemented by method zcl_first_table_function=>build_in

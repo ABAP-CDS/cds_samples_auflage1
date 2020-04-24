@@ -19,9 +19,9 @@ CLASS zamdp_table_function IMPLEMENTATION.
         OPTIONS READ-ONLY
         USING sbook.
 
-        RETURN SELECT concat (passform, ' ', passname ) as passenger from sbook
+        RETURN SELECT mandt as client, concat (passform, ' ', passname ) as passenger from sbook
             where mandt = :clnt AND carrid = :carrier AND connid = :connection_id
-            AND fldate = :flight_date AND cancelled = :abap_false;
+            AND fldate = :flight_date AND cancelled = abap_false;
 
     ENDMETHOD.
 

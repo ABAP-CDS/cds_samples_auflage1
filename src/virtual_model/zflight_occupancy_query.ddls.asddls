@@ -16,7 +16,7 @@ define view zflight_occupancy_query as select from zflight_cube {
         multipleSelections: true,
         mandatory: true
     }
-    key fldate,
+    key fldate,    
     @EndUserText.label: 'free seats'
     @DefaultAggregation: #FORMULA    
     seats_maximum - seats_occupied as free_seats,

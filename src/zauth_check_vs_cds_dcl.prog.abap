@@ -13,6 +13,7 @@ START-OF-SELECTION.
   PERFORM: authority_check CHANGING from_filter_with_auth_check,
     cds_dcl CHANGING from_cds_view_with_ac.
   ASSERT from_filter_with_auth_check = from_cds_view_with_ac.
+  cl_demo_output=>display_data( from_cds_view_with_ac ).
 
 FORM authority_check CHANGING flight_plan TYPE _flight_plan.
 
